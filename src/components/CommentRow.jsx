@@ -42,7 +42,7 @@ const CommentRow = ({ comment, onEdit }) => {
                     onSave={(val) => onEdit(comment.id, 'name', val)}
                 />
             </td>
-            <td className="p-1 border">
+            <td className="p-1 border w-2/5">
                 <EditableCell
                     value={comment.body}
                     onSave={(val) => onEdit(comment.id, 'body', val)}

@@ -12,11 +12,11 @@ const CommentsTable = ({ comments, currentPage, setCurrentPage, onEdit }) => {
                     <tr className="text-center">
                         <th className="p-1 border">Email</th>
                         <th className="p-1 border">Name</th>
-                        <th className="p-1 border">Body</th>
+                        <th className="p-1 border w-2/5">Body</th>
                         <th className="p-1 border">Post</th>
                     </tr>
                 </thead>
-                <tbody className="bg-white text-xs">
+                <tbody className="bg-white text-xs text-left">
                     {paginated.map((c) => (
                         <CommentRow key={c.id} comment={c} onEdit={onEdit} />
                     ))}
